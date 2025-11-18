@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnig code with RevoU day 2</title>
+    <!-- link yang kita gunakan adalah tailwind css dari cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- text-3xl adalah ukuran dari textnya -->
+    <!-- pb-4 adalah padding bottom atau jarak bawah dari elemen tersebut -->
+    <!-- text-blue-500 adalah warna textnya -->
+    <!-- font bold adalah untuk membuat tulisan menjadi tebal -->
+    <!-- ml-6 adalah margin left atau jarak kiri dari elemen tersebut -->
+    <!-- mt-6 adalah margin top atau jarak atas dari elemen tersebut -->
+    <!-- kenapa warna dari bg (background tidak full) karena kita menggunakan
+    margin yang artinya area yang di warnai sesuai dengan angka yang kita inginkan -->
+    <!-- agar bg bisa memberi warna keserluruh areanya kita bisa menggunakan pt dan pl -->
+    <!-- pl-6 adalah padding left atau jarak kiri dari elemen tersebut -->
+    <!-- pt-6 adalah padding top atau jarak atas dari elemen tersebut  -->
+
+    <h1 class="text-3xl pb-4 text-blue-500 font-bold pl-6 pt-6 bg-yellow-100" style="color: blue">Day 2 RevoU</h1>
+    <hr />
+    
+    <!-- p-4 adalah padding atau jarak dalam dari elemen tersebut -->
+    <!-- bg-[rgba(0,0,255,0.5)] adalah properti custom untuk memberikan warna background dengan kode rgba -->   
+    <!-- shadow-[0_5px_0_rgba(0,0,0,0.5)] adalah properti custom untuk memberikan efek bayangan pada elemen tersebut -->    
+     <!-- 0_5px_0_rgba(0,0,0,0.5) artinya bayangan bergeser 0px ke kanan, 5px ke bawah, blur 0px -->
+    <!-- rounded-lg adalah untuk membuat sudut elemen menjadi melengkung dengan ukuran large -->
+
+    <div class="p-4 bg-[rgba(0,0,255,0.5)] shadow-[0_5px_0_rgba(0,0,0,0.5)] rounded-lg">
+    Contoh box dengan shadow
+    </div>
+
+    <p>Welcome to day 2 of Coding Camp RevoU</p>
+
+    <!-- semamkin besar angka dari heading maka semkain kecil pula fontnya -->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- mempertebal tulisan atau menandakan sesuatu yang penting -->
+    <p>Tesk ini menjadi <b>BOLD</b></p>
+    <p id="lorem">
+      <!-- atribut id digunakan untuk memberikan identitas unik pada sebuah elemen HTML -->
+      <!-- memiringkan tulisan atau menandakan sesuatu yang berbeda -->
+      <i>
+        Lorem ipsum, subdolor sit amet consectetur adipisicing elit. Veritatis
+        rem, in culpa, repudiandae ipsum dignissimos inventore voluptatem omnis
+        tenetur dolorem quas consequuntur ducimus temporibus ex minima, atque
+        nisi quaerat. Doloremque?
+      </i>
+    </p>
+    <!-- memberikan garis bawah pada tulisan -->
+    <p>This is a <u>UNDERLINE</u> text</p>
+    <!-- memberikan highlight pada tulisan -->
+    <p>This is a <mark>MARK</mark> text</p>
+    <!-- memberikan coretan pada tulisan -->
+    <p>This is a <del>DELETE</del> text</p>
+    <!-- menempatkan tulisan menjadi di bawah garis normal teks -->
+    <p>Menempatkan tulisan menjadi di <sub>bawah</sub></p>
+    <!-- menempatkan tulisan menjadi di atas garis normal teks -->
+    <p>Menempatkan tulisan menjadi di <sup>atas</sup></p>
+
+    <h1>Bullet Point</h1>
+    <!-- unordered list -->
+    <!-- ada beberapa jenis type (atribut) pada bullet point, 
+        antara lain: square, circle, etc -->
+
+    <ul type="square">
+      <li>ANAK PERTAMA</li>
+      <p>
+        Orang yang akan <b>mungkin</b> bertangung jawab menggantikan posisi
+        seorang ayah suatu hari nanti untuk adik - adiknya
+      </p>
+      <li>ANAK KEDUA</li>
+      <li>ANAK KETIGA</li>
+      <!-- list item -->
+    </ul>
+
+    <h1>Urutan Angka</h1>
+    <!-- ordered list -->
+    <!-- ada beberapa jenis type (atribut) pada urutan angka,
+        antara lain: 1, a, i, etc -->
+
+    <ol>
+      <p><b>Langkah-langkah menggunakan HTML di vscode</b></p>
+      <li>Buka Vsdode</li>
+      <li>Buat file baru dengan ekstensi .html</li>
+      <li>Tulis kode HTML</li>
+      <li>Simpan file</li>
+    </ol>
+
+    <h1>Tabel</h1>
+    <!-- Untuk membuat table harus ada tag table nya terlebih dahulu -->
+    <!-- atribut border digunakan untuk memberikan garis pada tabel -->
+    <table border="1">
+      <!-- thead atau table head adalah heading dari tabel -->
+      <thead>
+        <!-- tr atau table row adalah baris pada tabel -->
+        <tr>
+          <!-- th atau table header adalah kolom pada tabel -->
+          <th>Nama</th>
+          <th>Umur</th>
+          <th>Hobi</th>
+        </tr>
+      </thead>
+      <!-- tbody atau table body adalah isi dari tabel -->
+      <tbody>
+        <tr>
+          <!-- td adalah table data atau isi dari kolom pada tabel -->
+          <td>ANAK PERTAMA</td>
+          <td>28</td>
+          <td>Musik</td>
+        </tr>
+        <tr>
+          <td>ANAK KEDUA</td>
+          <td>25</td>
+          <td>Traveling</td>
+        </tr>
+        <tr>
+          <td>ANAK KETIGA</td>
+          <td>20</td>
+          <td>Gaming</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>Gambar</h1>
+    <!-- tag img digunakan untuk menampilkan gambar pada halaman web -->
+    <!-- atribut src digunakan untuk menentukan sumber gambar -->
+    <!-- / fungsi ini digunakan untuk mengambil gambar 
+        yang berada di folder yang sama dengan file htmlnya  -->
+    <!-- pilih salah satu width atau height untuk mengatur ukuran gambar -->
+    <!-- fungsi alt adalah untuk memberikan deskripsi gambar
+        jika gambar tidak dapat ditampilkan atau orang - orang yang mengakses
+        menggunnakan text to speech -->
+    <img src="/Brigde.jpg" width="300px" alt="Gambar Jembatan" />
+    <!-- contoh lain jika gambar tidak berada di folder yang sama dengan file htmlnya -->
+    <img src="/images/Goa.jpg" alt="Gambar Goa" width="300px" />
+    <!-- contoh lain kalau mau ambil gambar dari internet bisa juga -->
+    <img
+      src="https://f4.bcbits.com/img/a2852750655_10.jpg"
+      alt="Ed sheeran"
+      width="200px"
+    />
+    <h1>Link</h1>
+    <p>
+        Ini adalah link menuju akun instagram
+        <!-- tag a atau anchor digunakan untuk merepresentasikan link
+        atau tautan pada halaman web -->
+        <!-- atribut target digunakan untuk membuka link di tab baru -->
+        <!-- atribut href atau hypertext reference atribut digunakan untuk menentukan tujuan linknya -->
+      <a href="https://www.instagram.com/centre.co/" target="_blank">Coffe </a>
+    </p>
+    <p>
+      <a href="/index.html">Index</a>
+    </p>
+    <p><a href="#lorem">Lorem</a></p>
+
+    <h1>Contact Us</h1>
+    <!-- tag form digunakan untuk membuat form pada halaman web -->
+    <form>
+      <!-- tag label digunakan untuk memberikan keterangan pada elemen form -->
+      <label>Nama</label>
+      <!-- tag input digunakan untuk membuat elemen input pada form -->
+      <input type="text" /><br />
+      <!-- tag br atau break digunakan untuk memberikan jeda baris atau enter -->
+      <label>Tinggi</label>
+      <input type="number" min="0" max="250" placeholder="150" />cm <br />
+      
+      <label>Password</label>
+      <input type="password" /><br />
+      
+      <label>Jenis Kelamin</label>
+      <!-- name disini berfungsi untuk mengelompokkan radio button -->
+      <input type="radio" value="male" name="Jenis Kelamin">Laki-laki</input>
+        <input type="radio" value="female" name="Jenis Kelamin">Perempuan</input><br />
+
+        <label>Nama Makanan</label>
+        <!-- tag select digunakan untuk membuat dropdown list -->
+        <select>
+            <!-- tag option digunakan untuk membuat opsi pada dropdown list -->
+            <option value="Nasi Goreng"> Nasi Goreng</option>
+            <option value="Mie Goreng">Mie Goreng</option>
+            <option value="Minas">Minas</option>
+            <option value="Orak-Arik">Orak-Arik</option>
+        </select>
+
+      <label>Comment</label><br />
+      <!-- tag textarea digunakan untuk membuat kotak teks yang lebih besar
+      dari input teks biasa -->
+      <textarea
+        rows="5"
+        cols="30"
+        placeholder="Tulisankan komentar anda disini....."
+      ></textarea><br/>
+        <!-- checkbox adalah elemen form yang digunakan
+        untuk memilih satu atau beberapa opsi 
+        dari sekumpulan opsi yang tersedia -->
+        <!-- submit berfungsi untuk mengirim data yang telah diisi pada form
+        ke server untuk diproses lebih lanjut. -->
+        <!-- value digunakan untuk memberikan teks pada tombol submit -->
+      <input type="checkbox" />Saya setuju dengan syarat dan ketentuan yang berlaku<br/>
+        <input type="submit" value="Kirim"/>
+
+        <!-- ada cara lain yaitu dengan menggunakan tag button -->
+        <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
